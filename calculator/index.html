@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Parcel Sandbox</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div style="
+        max-width: 300px;
+        font-family: sans-serif;
+        border: solid 1px #888;
+        padding: 10px;
+      ">
+    <div id="display-area" style="border: solid 1px #888; padding: 10px;">
+      <p id="input-display">Input goes here</p>
+      <!-- display buttons clicked -->
+      <p style="margin-top: 10px; text-align: right;" id="result-display">Result goes here</p>
+      <!-- display the result -->
+    </div>
+    <div id="buttons" style="margin-top: 20px;">
+      <div id="numbers">
+        <button onclick="onNumberClick(event)">1</button>
+        <button onclick="onNumberClick(event)">2</button>
+        <button onclick="onNumberClick(event)">3</button>
+        <button onclick="onNumberClick(event)">4</button>
+        <button onclick="onNumberClick(event)">5</button>
+        <button onclick="onNumberClick(event)">6</button>
+        <button onclick="onNumberClick(event)">7</button>
+        <button onclick="onNumberClick(event)">8</button>
+        <button onclick="onNumberClick(event)">9</button>
+      </div>
+      <div id="ops" style="margin-top: 20px;">
+        <button onclick="onOperatorClick(event)">+</button>
+        <button onclick="onOperatorClick(event)">-</button>
+        <button onclick="onOperatorClick(event)">*</button>
+        <button onclick="onOperatorClick(event)">/</button>
+        <button onclick="onOperatorClick(event)">=</button>
+        <button onclick="onOperatorClick(event)">&laquo;</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./index.js" type="text/javascript"></script>
+  <script src="./create-element.js" type="text/javascript"></script>
+</body>
+
+</html>

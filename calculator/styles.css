@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  border: solid 1px #000;
+  border-radius: 100%;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+div#numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 10px;
+}
+
+#ops {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
