@@ -11,6 +11,8 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style/main.css" />
+    
+    <script src="rooms.js"></script>
 </head>
 
 
@@ -19,17 +21,13 @@
 
         <div
             style="display: flex;justify-content: space-between;margin: 10px;border: 1px solid lightgrey;padding: 10px;gap: 7px;">
-
             <div style="display: flex; gap: 10px;margin: 10px;margin-left: 20px;">
-
                 <img src="images/logo.jpg.png" style="height: 40px; width: 150px;" >
-
                 <span> <div class="dropdown" >
                     <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
                       aria-expanded="false" style="background-color:azure;color: #212529;">
                       Explore
                     </button>
-          
                     <ul class="dropdown-menu">
           
                       <p style="margin-left: 10%;">Hotels&Resorts<p>
@@ -37,65 +35,39 @@
                       <p style="margin-left: 10%;">Our Credit Car</p>
                                 
                     </ul>
-                  </div>
-                    
+                  </div> 
                 </span>
-
                 <span>Offers </span>
-
                 <span>Meetings & Events</span>
-
                 <span>
                     <div class="dropdown" >
                         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
                           aria-expanded="false" style="background-color:azure;color: #212529;">
                           Loyality Program
                         </button>
-              
                         <ul class="dropdown-menu">
-              
                           <p style="margin-left: 10%;">Program Overview<p>
                           <p  style="margin-left: 10%;"> Earn<p>
                           <p  style="margin-left: 10%;"> Redeem<p>
                           <p style="margin-left: 10%;">Tiers & Benfits </p>
-                          
-            
                         </ul>
                       </div>
                 </span>
-
             </div>
-
             <div style="display: flex; gap: 10px;margin: 10px;margin-right: 20px;">
-
                 <span>Languages </span>
-
                 <span>Sign in or Join </span>
-
-
-
             </div>
-
         </div>
-
         <div>
-
         </div>
-
         <div style="display: flex;gap: 10px;margin-left: 100px;margin-right:40px ; width: 100%;">
+            <input type="search" placeholder="Search by Location" style="width: 30%;height:40px;"/>
+            <input type="date" placeholder="" style="width:180px;"/>
+            <input type="date" placeholder="" style="width:180px;"/>
+            <a href="rooms.html"  style="background-color: #FFB611;padding: 9px 24pxpx; font-size: 16px; text-decoration: none; color: black; display: inline-block; padding: 10px;">Find Hotels</a>
 
-            <input type="search" placeholder="Search by city name,Hotel,airport" style="width: 30%;height:40px;"/>
-       
-            <input type="date" placeholder="" style="width:180px;"/>
-       
-            <input type="date" placeholder="" style="width:180px;"/>
-       
-            <button style="background-color: #FFB611;padding: 9px 24pxpx; font-size: 16px;">Find Hotels</button>
-       
            </div>
-
-       
-        
         <!-- background image -->
         <div style="margin-top: 10px;">
             <hr>
@@ -130,9 +102,6 @@
             <h2 style="text-align: center; margin-top: 110px;">Discover Somewhere New</h2>
 
         </p>
-
-      
-
         <div style="display: flex; gap: 10px; justify-content: space-evenly;">
             <div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="images/Lobby.jpg" alt="Card image cap">
@@ -185,6 +154,7 @@
                     <img class="card-img-top" src="./images/1.jpg" />
                     <h4 class="card-title medium-header">500 reasons to stay</h4>
                     <p class="card-text">Explore new places and reward your spirit of adventure. Now you can earn 500 Bonus Points for qualifying nights at new Hyatt hotels around the world.</p>
+                    <a href="www.google.com">See Details ></a>
                 </div>
             </div>
             <div class="card">
@@ -193,7 +163,7 @@
                     <img class="card-img-top" src="./images/QueenBed.jpg" />
                     <h4 class="card-title medium-header">500 reasons to stay</h4>
                     <p class="card-text">Learn something new, do the unexpected, or just hit pause. More than 200 experiences await—all with your wellbeing in mind. Find what inspires you and earn 10 points per eligible $1 spent.  ​</p>
-                    
+                    <a href="www.google.com">See Details ></a>
                 </div>
             </div>
             <div class="card">
@@ -202,7 +172,7 @@
                     <img class="card-img-top" src="./images/3.jpg" />
                     <h4 class="card-title medium-header">500 reasons to stay</h4>
                     <p class="card-text">Masterpieces Stories are a curated collection of 30+ hotels that let you take your rightful place in history.</p>
-                    
+                    <a href="www.google.com">See Details ></a>
                 </div>
             </div>
         </section>
@@ -211,7 +181,8 @@
             <div class="right-info">
                 <h3 class="medium-header">Homes & hideaways</h3>
             <p>Members can now earn and redeem points on a collection of private homes, villas, condos and more. Waterfront views? Mountainside escapes? Cozy hideaways? The choice is yours.</p>
-            </div>
+            <a href="www.google.com">See Details ></a>
+        </div>
         </section>
         <div style="background-color: #384d63;height: 400px;width: 100%;
 
@@ -234,7 +205,6 @@
             padding: 10px;
     
           "
-    
         >
     
           <span>Join</span>
@@ -255,86 +225,40 @@
     
           <img src="HYATT.png" style="width: 30px; border-radius: 50%;">
     
-     
-    
         </div>
-    
-     
     
         <div style="display: flex;justify-content: space-evenly;margin: 10px;">
-    
-        
-    
           <div style="display:flex; flex-direction: column; color: #FFFFFF;">
-    
             <div style="font-size: 22px;">Membership Is Free</div>
-    
             <p>Access exclusive offers and meaningful benefits.</p>
-    
           </div>
-    
-        
-    
           <div style="border-left: 1px solid white;padding: 5px;"></div>
-    
-        
-    
           <div style="display:flex; flex-direction: column; color: #FFFFFF;">
-    
             <div style="font-size: 22px;">Enjoy Member Rates</div>
-    
             <p>Save up to 10% with your Member Rate at participating Hyatt hotels.</p>
-    
           </div>
-    
           <div style="border-left: 1px solid white;padding: 5px;"></div>
-    
-     
-    
           <div style="display: flex; flex-direction: column; color: #FFFFFF;">
-    
             <div style="font-size: 22px;">Enjoy Member Rates</div>
-    
             <p>Enjoy a Brand Explorer Award after you stay at five unique brands.</p>
-    
           </div>
-    
           <div style="border-left: 1px solid white;padding: 5px;"></div>
-    
-     
-    
           <div style="display: flex; flex-direction: column; color: #FFFFFF;">
-    
             <div style="font-size: 22px;">Feel Rewarded</div>
-    
             <p>Earn points to use toward free nights, dining, spa experiences, and more.</p>
-    
           </div>
-    
         </div>
-    
         <div style="text-align: center;color: white;padding: 10px;margin: 10px;">
-    
           <button>JOIN NOW</button>
-    
         </div>
-    
           <div style="text-align: center;">
-    
           <a href="https://help.hyatt.com/en/hyatt-terms/world-of-hyatt-terms.html" style="color: white;">Terms Apply</a>
-    
         </div>
     
       
     
         
-    
-        
-    
-        
-    
-     
-    
+
       </div>
     
      
@@ -383,6 +307,8 @@
     
         </div>
     </div> 
+<!-- 
+    <script src="rooms.js"></script> -->
 
     </body>
 

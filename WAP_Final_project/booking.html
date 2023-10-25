@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+  <div>
+    <input type="date" id="checkIn"/>
+    <input type="date" id="checkOut"/>
+  <button id="btn" onclick="redirectToNextPage()">BOOK NOW</button>
+ 
+  </div>
+  <script>
+ 
+let checkinDate =document.getElementById('checkIn');
+let checkOutDate =document.getElementById('checkOut');
+let btn =document.getElementById('btn');
+ 
+    function redirectToNextPage(){
+ 
+      let checkInValue =checkinDate.value;
+      let checkOutValue =checkOutDate.value;
+ 
+      window.location.href='https://www.hyatt.com/shop/rooms/dsmzd?location=Hyatt%20Place%20Des%20Moines%2FDowntown&checkinDate=2023-10-26&checkoutDate=2023-10-27&rooms=1&adults=1&kids=0&rate=Standard#room-page-anchor'
+ 
+ 
+    }
+  </script>
+</body>
+</html>
