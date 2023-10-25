@@ -3,7 +3,7 @@
     margin-top: -100px;
     height: 200px;
     border: 2px solid;
-    border-color: #00fff3;
+    border-color:rgba(255,255,255,0.7);
     width: 800px;
     text-align: center;
     position: absolute;
@@ -103,3 +103,65 @@ img {
 button {
     margin-top: 10px;
 }
+
+/* The search style */
+
+
+/* Style the container to position it relative and hide the list by default */
+
+.autocomplete-container {
+
+    position: relative;
+
+    display: inline-block;
+
+}
+
+/* Style the input field */
+
+#cityInput {
+
+    width: 200px;
+
+    padding: 10px;
+
+}
+
+/* Style the autocomplete list */
+
+.autocomplete-list {
+
+    position: absolute;
+
+    z-index: 1;
+
+    top: 100%;
+
+    left: 0;
+
+    right: 0;
+
+    background-color: #fff;
+
+    border: 1px solid #ccc;
+
+}
+
+/* Style list items */
+
+.autocomplete-list-item {
+
+    padding: 10px;
+
+    cursor: pointer;
+
+}
+
+/* Highlight the selected item */
+
+.autocomplete-list-item:hover {
+
+    background-color: #f2f2f2;
+
+}
+

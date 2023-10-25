@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <style>
+
+        /* Style the container to position it relative and hide the list by default */
+
+        .autocomplete-container {
+
+            position: relative;
+
+            display: inline-block;
+
+        }
+ 
+        /* Style the input field */
+
+        #cityInput {
+
+            width: 200px;
+
+            padding: 10px;
+
+        }
+ 
+        /* Style the autocomplete list */
+
+        .autocomplete-list {
+
+            position: absolute;
+
+            z-index: 1;
+
+            top: 100%;
+
+            left: 0;
+
+            right: 0;
+
+            background-color: #fff;
+
+            border: 1px solid #ccc;
+
+        }
+ 
+        /* Style list items */
+
+        .autocomplete-list-item {
+
+            padding: 10px;
+
+            cursor: pointer;
+
+        }
+ 
+        /* Highlight the selected item */
+
+        .autocomplete-list-item:hover {
+
+            background-color: #f2f2f2;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+ 
+<div class="autocomplete-container">
+
+    <input type="search" id="cityInput" placeholder="Search for a city">
+
+    <div class="autocomplete-list" id="cityList"></div>
+
+</div>
+ 
+<script>
+
+    // Sample list of cities
+
+    const cities = ['Des Moines','New York', 'Los Angeles', 'Chicago', 'San Francisco', 'Miami'];
+ 
+    const input = document.getElementById('cityInput');
+
+    const cityList = document.getElementById('cityList');
+ 
+    // Function to show the list of cities
+
+    function showCityList() {
+
+        cityList.innerHTML = ''; // Clear the previous list
+ 
+        const searchTerm = input.value.toLowerCase();
+ 
+        for (let city of cities) {
+
+            if (city.toLowerCase().includes(searchTerm)) {
+
+                const listItem = document.createElement('div');
+
+                listItem.textContent = city;
+
+                listItem.classList.add('autocomplete-list-item');
+ 
+                listItem.addEventListener('click', () => {
+
+                    input.value = city; // Set the input value to the selected city
+
+                    cityList.innerHTML = ''; // Clear the list
+
+                });
+ 
+                cityList.appendChild(listItem);
+
+            }
+
+        }
+ 
+        if (cityList.children.length === 0) {
+
+            cityList.innerHTML = '<div class="autocomplete-list-item">No matching cities found</div>';
+
+        }
+
+    }
+ 
+    input.addEventListener('click', showCityList);
+
+</script>
+ 
+</body>
+
+</html>

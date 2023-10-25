@@ -10,7 +10,12 @@ function showImages(index) {
         'images/DesMoineOutside.jpg',
         "images/DSMRoomsInside.jpg",
         "images/DSMRoomsInside2.jpg",
-        "images/DSMRoomsInside3.jpg"
+        "images/DSMRoomsInside3.jpg",
+        "images/QueenBed.jpg",
+        "images/Omha.jpg",
+        "images/Lobby.jpg",
+        "images/DESMoine.jpg",
+
 
     ]
     for (let img of imageSources) {
@@ -27,7 +32,7 @@ function viewRoomDetails(index) {
 function createRooms() {
     let rooms = document.createElement('div');
 
-    const romms_obj = [{"name": "Hyatt Place Des Moines Downtown", "price": 70},{"name": "Hyatt Place West Des Moines/ Jordan Creek", "price": 130},{name: "Hyatt Place New York",price : 190}, {name: "Hyatt Place Chicago",price : 200}];
+    const romms_obj = [{"name": "Hyatt Place Des Moines Downtown", "price": 70},{"name": "Hyatt Place Addis Ababa", "price": 130},{name: "Hyatt Place Chicago",price : 190}, {name: "Hyatt Place Alexandria",price : 200}];
 
 
     let start;
@@ -38,13 +43,19 @@ function createRooms() {
        <div id="carouselExampleControls+${index}" class="carousel slide" data-ride="carousel">
            <div class="carousel-inner">
              <div class="carousel-item active">
-               <img class="d-block w-100" src="images/1.jpg" alt="First slide">
+               <img class="d-block w-100" src="images/DesMoineOutside.jpg" alt="First slide">
              </div>
              <div class="carousel-item">
                <img class="d-block w-100" src="images/2.jpg" alt="Second slide">
              </div>
              <div class="carousel-item">
-               <img class="d-block w-100" src="images/3.jpg" alt="Third slide">
+               <img class="d-block w-100" src="images/QueenBed.jpg" alt="Third slide">
+             </div>
+             <div class="carousel-item">
+               <img class="d-block w-100" src="images/DSMRoomsInside.jpg" alt="Third slide">
+             </div>
+             <div class="carousel-item">
+               <img class="d-block w-100" src="images/Lobby.jpg" alt="Third slide">
              </div>
            </div>
            <a class="carousel-control-prev" href="#carouselExampleControls+${index}" role="button" data-slide="prev">
@@ -69,10 +80,6 @@ function createRooms() {
 
 
     document.getElementById('rooms-container').innerHTML = data;
-
-
-   
-
 
     let previousButtons = rooms.querySelectorAll('button.previous')
     let nextButtons = rooms.querySelectorAll('button.next')
@@ -101,3 +108,55 @@ function searchRooms() {
 }
 
 createRooms()
+
+// The search script
+
+ // Sample list of cities
+
+ const cities = ['Des Moines','New York', 'Los Angeles', 'Chicago', 'San Francisco', 'Miami'];
+ 
+ const input = document.getElementById('cityInput');
+
+ const cityList = document.getElementById('cityList');
+
+ // Function to show the list of cities
+
+ function showCityList() {
+
+     cityList.innerHTML = ''; // Clear the previous list
+
+     const searchTerm = input.value.toLowerCase();
+
+     for (let city of cities) {
+
+         if (city.toLowerCase().includes(searchTerm)) {
+
+             const listItem = document.createElement('div');
+
+             listItem.textContent = city;
+
+             listItem.classList.add('autocomplete-list-item');
+
+             listItem.addEventListener('click', () => {
+
+                 input.value = city; // Set the input value to the selected city
+
+                 cityList.innerHTML = ''; // Clear the list
+
+             });
+
+             cityList.appendChild(listItem);
+
+         }
+
+     }
+
+     if (cityList.children.length === 0) {
+
+         cityList.innerHTML = '<div class="autocomplete-list-item">No matching cities found</div>';
+
+     }
+
+ }
+
+ input.addEventListener('click', showCityList);
