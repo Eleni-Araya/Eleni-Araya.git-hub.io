@@ -1,38 +1,36 @@
-       window.addEventListener("load", (event) => {
-
-       
-
-        
-
+function viewRoomDetails(index) {
+    window.location.href = `room_details.html?room_id=${index}`
+}
+      window.addEventListener("load", (event) => {
 
 const divIDRooms = ['desmoines', 'fairfield', 'alexandria', 'Arlington', 'newyork', 'losangeles', 'chicago']
 
-// function showImages(index) {
+function showImages(index) {
 
-//     let width = '700px';
-//     let result = ''
-//     let imageSources = [
-//         'images/DesMoineOutside.jpg',
-//         "images/DSMRoomsInside.jpg",
-//         "images/DSMRoomsInside2.jpg",
-//         "images/DSMRoomsInside3.jpg",
-//         "images/QueenBed.jpg",
-//         "images/Omha.jpg",
-//         "images/Lobby.jpg",
-//         "images/DESMoine.jpg",
+    let width = '700px';
+    let result = ''
+    let imageSources = [
+        'images/DesMoineOutside.jpg',
+        "images/DSMRoomsInside.jpg",
+        "images/DSMRoomsInside2.jpg",
+        "images/DSMRoomsInside3.jpg",
+        "images/QueenBed.jpg",
+        "images/Omha.jpg",
+        "images/Lobby.jpg",
+        "images/DESMoine.jpg",
 
 
-//     ]
-//     for (let img of imageSources) {
-//         result += `<div class="carousel-item ${(index == 1) ? "active" : ""}">
-//         <img src="${img}" style="width: ${width}" />
-//         </div>`
-//     }
-//     return result
-// }
-// function viewRoomDetails(index) {
-//     window.location.href = `room_details.html?room_id=${index}`
-// }
+    ]
+    for (let img of imageSources) {
+        result += `<div class="carousel-item ${(index == 1) ? "active" : ""}">
+        <img src="${img}" style="width: ${width}" />
+        </div>`
+    }
+    return result
+}
+
+
+
 
 function createRooms() {
     let rooms = document.createElement('div');
@@ -51,7 +49,7 @@ function createRooms() {
        <div id="carouselExampleControls+${index}" class="carousel slide" data-ride="carousel">
            <div class="carousel-inner">
              <div class="carousel-item active">
-               <img class="d-block w-100" src="images/DesMoineOutside.jpg" alt="First slide">
+               <img class="d-block w-100" src="images/DSMRoomsInside.jpg" alt="First slide">
              </div>
              <div class="carousel-item">
                <img class="d-block w-100" src="images/2.jpg" alt="Second slide">
@@ -107,8 +105,6 @@ function createRooms() {
     }
 
     document.body.append(rooms);
-
-
 }
 
 function searchRooms() {
@@ -117,6 +113,5 @@ function searchRooms() {
 
 createRooms()
 
-
-
        });
+    
