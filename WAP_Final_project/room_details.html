@@ -98,6 +98,19 @@
             window.location.reload();
         }
 
+        function dateValidation(){
+          let checkIn=document.getElementById('checkIn');
+          let checkOut=document.getElementById('checkOut')
+
+          var inputDate=checkIn.innerHTML;
+          var checkOutDate=checkOut.innerHTML;
+          var todayDate=new Date ();
+
+          if(inputDate<todayDate){
+            
+          }
+        }
+
         // alert("The room id is " + urlParams.get("room_id"))
 
 

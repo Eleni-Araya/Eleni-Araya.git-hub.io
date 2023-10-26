@@ -1,38 +1,46 @@
+       window.addEventListener("load", (event) => {
+
+       
+
+        
 
 
 const divIDRooms = ['desmoines', 'fairfield', 'alexandria', 'Arlington', 'newyork', 'losangeles', 'chicago']
 
-function showImages(index) {
+// function showImages(index) {
 
-    let width = '700px';
-    let result = ''
-    let imageSources = [
-        'images/DesMoineOutside.jpg',
-        "images/DSMRoomsInside.jpg",
-        "images/DSMRoomsInside2.jpg",
-        "images/DSMRoomsInside3.jpg",
-        "images/QueenBed.jpg",
-        "images/Omha.jpg",
-        "images/Lobby.jpg",
-        "images/DESMoine.jpg",
+//     let width = '700px';
+//     let result = ''
+//     let imageSources = [
+//         'images/DesMoineOutside.jpg',
+//         "images/DSMRoomsInside.jpg",
+//         "images/DSMRoomsInside2.jpg",
+//         "images/DSMRoomsInside3.jpg",
+//         "images/QueenBed.jpg",
+//         "images/Omha.jpg",
+//         "images/Lobby.jpg",
+//         "images/DESMoine.jpg",
 
 
-    ]
-    for (let img of imageSources) {
-        result += `<div class="carousel-item ${(index == 1) ? "active" : ""}">
-        <img src="${img}" style="width: ${width}" />
-        </div>`
-    }
-    return result
-}
-function viewRoomDetails(index) {
-    window.location.href = `room_details.html?room_id=${index}`
-}
+//     ]
+//     for (let img of imageSources) {
+//         result += `<div class="carousel-item ${(index == 1) ? "active" : ""}">
+//         <img src="${img}" style="width: ${width}" />
+//         </div>`
+//     }
+//     return result
+// }
+// function viewRoomDetails(index) {
+//     window.location.href = `room_details.html?room_id=${index}`
+// }
 
 function createRooms() {
     let rooms = document.createElement('div');
 
-    const romms_obj = [{"name": "Hyatt Place Des Moines Downtown", "price": 70},{"name": "Hyatt Place Addis Ababa", "price": 130},{name: "Hyatt Place Chicago",price : 190}, {name: "Hyatt Place Alexandria",price : 200}];
+    const romms_obj = [{"name": "Hyatt Place Des Moines Downtown ","location":"418 6th ave, Des Moines, Iowa 5039 United States", "price": 70},
+                        {"name": "Hyatt Place Altoona Des Moines", "location":"480 Bass Pro Drive NW Altoona, Iowa, 50009 United States","price": 130},
+                        {"name": "Hyatt Place West Des Moines/Jordan Creek","location":"295 South 64th Street West Des Moines, Iowa, 50266 United States","price" : 190}, 
+                        ];
 
 
     let start;
@@ -70,7 +78,7 @@ function createRooms() {
    </div>
    <div class="col-sm-8">
        <h2>${room_object.name}</h2>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, neque explicabo. Reprehenderit, repellat iusto. Repellendus eius quo, non et vel, quasi animi distinctio, aliquid id cupiditate tempora! Quibusdam, ipsa optio?</p>
+       <p>Address: ${room_object.location}</p>
        <p><strong>$${room_object.price}</strong></p>
        <button class="btn btn-primary" onclick="viewRoomDetails(${index + 1})">View Details</button>
    </div>
@@ -109,54 +117,6 @@ function searchRooms() {
 
 createRooms()
 
-// The search script
 
- // Sample list of cities
 
- const cities = ['Des Moines','New York', 'Los Angeles', 'Chicago', 'San Francisco', 'Miami'];
- 
- const input = document.getElementById('cityInput');
-
- const cityList = document.getElementById('cityList');
-
- // Function to show the list of cities
-
- function showCityList() {
-
-     cityList.innerHTML = ''; // Clear the previous list
-
-     const searchTerm = input.value.toLowerCase();
-
-     for (let city of cities) {
-
-         if (city.toLowerCase().includes(searchTerm)) {
-
-             const listItem = document.createElement('div');
-
-             listItem.textContent = city;
-
-             listItem.classList.add('autocomplete-list-item');
-
-             listItem.addEventListener('click', () => {
-
-                 input.value = city; // Set the input value to the selected city
-
-                 cityList.innerHTML = ''; // Clear the list
-
-             });
-
-             cityList.appendChild(listItem);
-
-         }
-
-     }
-
-     if (cityList.children.length === 0) {
-
-         cityList.innerHTML = '<div class="autocomplete-list-item">No matching cities found</div>';
-
-     }
-
- }
-
- input.addEventListener('click', showCityList);
+       });

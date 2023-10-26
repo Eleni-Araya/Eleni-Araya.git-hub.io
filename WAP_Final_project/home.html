@@ -2,211 +2,240 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style/main.css" />
-    
-    <script src="rooms.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/css/autoComplete.min.css">
+
+  <link rel="stylesheet" href="style/main.css" />
+
+  <script src="rooms.js"></script>
 </head>
 
 
-    <body>
-        <div class="container">
+<body>
+  <div class="container">
 
-        <div
-            style="display: flex;justify-content: space-between;margin: 10px;border: 1px solid lightgrey;padding: 10px;align-items: center;">
-            <div style="display: flex; gap: 50px;margin: 10px;margin-left: 20px;">
-                <img src="images/logo.jpg.png" style="height: 40px; width: 150px;" >
-                <span> <div class="dropdown" >
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                      aria-expanded="false" style="background-color:white;color: #212529;border: 0;box-shadow: none;">
-                      Explore
-                    </button>
-                    <ul class="dropdown-menu">
-          
-                      <p style="margin-left: 10%;">Hotels&Resorts<p>
-                      <p  style="margin-left: 10%;"> Our Brands<p>
-                      <p style="margin-left: 10%;">Our Credit Car</p>
-                                
-                    </ul>
-                  </div> 
-                </span>
-                <span style="margin-top: 15px;">Offers </span>
-                <span style="margin-top: 15px;">Meetings & Events</span>
-                <span>
-                    <div class="dropdown" >
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                          aria-expanded="false" style="background-color:white;color: #212529;border: 0;box-shadow: none;">
-                          Loyality Program
-                        </button>
-                        <ul class="dropdown-menu">
-                          <p style="margin-left: 10%;">Program Overview<p>
-                          <p  style="margin-left: 10%;"> Earn<p>
-                          <p  style="margin-left: 10%;"> Redeem<p>
-                          <p style="margin-left: 10%;">Tiers & Benfits </p>
-                        </ul>
-                      </div>
-                </span>
-            </div>
-            <div style="display: flex; gap: 10px;margin: 20px;margin-right: 20px;">
-                <span>Languages </span>
-                <span>Sign in or Join </span>
-            </div>
-        </div>
-        <div>
-        </div>
+    <div
+      style="display: flex;
+      justify-content: space-between;
+      margin: 10px;
+      border-top: 1px solid lightgrey;
+      padding: 10px;
+      align-items: center;
+      border-bottom: 1px solid lightgray;">
 
-        <!-- the search div -->
-        <div style="display: flex;gap: 10px;margin-left: 100px;margin-right:40px ; width: 100%;">
-            <!-- <input type="search" id="serachId" placeholder="Search by Location" style="width: 35%;height:40px;"/> -->
-            <div class="autocomplete-container">
+      <div style="display: flex; gap: 50px;margin: 10px;margin-left: 20px;">
+        <img src="images/logo.jpg.png" style="height: 40px; width: 150px;">
+        <span>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false" style="background-color:white;color: #212529;border: 0;box-shadow: none;">
+              Explore
+            </button>
+            <ul class="dropdown-menu">
 
-              <input type="search" id="cityInput" placeholder="Search for a city">
-          
-              <div class="autocomplete-list" id="cityList"></div>
-          
+              <p style="margin-left: 10%;">Hotels&Resorts
+              <p>
+              <p style="margin-left: 10%;"> Our Brands
+              <p>
+              <p style="margin-left: 10%;">Our Credit Car</p>
+
+            </ul>
           </div>
+        </span>
+        <span style="margin-top: 15px;">Offers </span>
+        <span style="margin-top: 15px;">Meetings & Events</span>
+        <span>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false" style="background-color:white;color: #212529;border: 0;box-shadow: none;">
+              Loyality Program
+            </button>
+            <ul class="dropdown-menu">
+              <p style="margin-left: 10%;">Program Overview
+              <p>
+              <p style="margin-left: 10%;"> Earn
+              <p>
+              <p style="margin-left: 10%;"> Redeem
+              <p>
+              <p style="margin-left: 10%;">Tiers & Benfits </p>
+            </ul>
+          </div>
+        </span>
+      </div>
+      <div style="display: flex; gap: 10px;margin: 20px;margin-right: 20px;">
+        <span>Languages </span>
+        <span>Sign in or Join </span>
+      </div>
+    </div>
+    <div>
+    </div>
 
-            <input type="date" placeholder="" style="width:180px;"/>
-            <input type="date" placeholder="" style="width:180px;"/>
-            <a href="rooms.html"  style="background-color: #FFB611;padding: 9px 24pxpx; font-size: 16px; text-decoration: none; color: black; display: inline-block; padding: 10px;width: 250px;text-align: center;">Find Hotels</a>
+    <!-- the search div -->
+    <div style="display: flex;gap: 10px;margin-left: 100px;margin-right:40px ; width: 100%;">
+      <div class="autoComplete_wrapper">
+        <input id="autoComplete" type="search" dir="ltr" spellcheck=false autocorrect="off" autocomplete="off" autocapitalize="off">
+    </div>  
+      <input type="date" id="checkInDate" placeholder="" style="width:180px;"  />
+      <input type="date" id="checkOutDate" placeholder="" style="width:180px;"  />
+      <a id="find-hotels-button" href="rooms.html"
+        style="background-color: #FFB611;padding: 9px 24pxpx; font-size: 16px; text-decoration: none; 
+        color: black; display: inline-block; padding: 10px;width: 250px;text-align: center; border-radius: 5rem">Find
+        Hotels</a>
 
-           </div>
+    </div>
 
-        <!-- background image -->
-        <div style="margin-top: 10px;">
-            <hr>
-            <div>
-                <img src="images/backgroundImage.jpg" style="height: 500px;width: 100%;">
-            </div>
-            <!-- Earn Bonus -->
-            <div id="slider-footer" >
-                <div>
-                    <h2 style="    text-size-adjust: 100%;color: #282828; -webkit-font-smoothing: antialiased;
+    <!-- background image -->
+    <div style="margin-top: 10px;">
+      <hr>
+      <div>
+        <img src="images/backgroundImage.jpg" style="height: 500px;width: 100%;">
+      </div>
+      <!-- Earn Bonus -->
+      <div id="slider-footer">
+        <div>
+          <h2
+            style="    text-size-adjust: 100%;color: #282828; -webkit-font-smoothing: antialiased;
                     line-height: 1.3;box-sizing: border-box;padding: 0;font-weight: 400;margin: 0 0 12px;
-                    font-family: 'Times New Roman', Times, serif;font-size: 24px;font-weight: bold; text-align: center;">Earn more with Bonus Journeys</h2>
-                   
-                </div>
-    
-                <div style="display: grid;grid-template-columns: 3fr 1fr;">
-                    <div>
-                        Register to earn 3,000 Bonus Points for every three qualifying nights, up to 21 nights, completed between October 6 and November 
-                        30 at 1,250+ hotels worldwide. Register by November 10, 2023.
-                    </div>
-                    <div><span style=" border: 2px solid ;width: 200px; padding: 5px;
+                    font-family: 'Times New Roman', Times, serif;font-size: 24px;font-weight: bold; text-align: center;">
+            Earn more with Bonus Journeys</h2>
+            
+
+        </div>
+
+        <div style="display: grid;grid-template-columns: 3fr 1fr;">
+          <div>
+            Register to earn 3,000 Bonus Points for every three qualifying nights, up to 21 nights, completed between
+            October 6 and November
+            30 at 1,250+ hotels worldwide. Register by November 10, 2023.
+          </div>
+          <div><span style=" border: 2px solid ;width: 200px; padding: 5px;
                     
                         background-color: whitesmoke; ">Register Now</span>
-                    </div>
-        
-                </div>
-    
-            </div>
+          </div>
 
         </div>
-        <p>
-            <h2 style="text-align: center; margin-top: 110px;">Discover Somewhere New</h2>
 
-        </p>
-        <div style="display: flex; gap: 10px; justify-content: space-evenly;">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="images/Lobby.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">Hyatt Place Orlando Airport</p>
-                </div>
-                <a href="https://www.hyatt.com/en-US/hotel/iowa/hyatt-place-des-moines-downtown/dsmzd?icamp=hpe_hy_com" style="text-align: center;">
-                    View Hotel
-                </a>
-              </div>
+      </div>
 
-              <div class="card" style="width: 18rem;" style="text-align: center;">
-                <img class="card-img-top" src="images/DESMoine.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">Hyatt Place Des Moines Downtown</p>
-                </div>
-                <a href="https://world.hyatt.com/content/gp/en/offers/new-hotels.html?icamp=hy_newhotelsbonuspoints_october2023_hppromo_A_en" style="text-align: center;">
-                    View Hotel
-                </a>
-              </div>
+    </div>
+    <p>
+    <h2 style="text-align: center; margin-top: 110px;">Discover Somewhere New</h2>
 
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="images/Omha.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">Hyatt Place Omha</p>
-                </div>
-                <a href="https://world.hyatt.com/content/gp/en/offers/new-hotels.html?icamp=hy_newhotelsbonuspoints_october2023_hppromo_A_en" style="text-align: center;">
-                    View Hotel
-                </a>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="images/QueenBed.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">Hyatt Place Orlando/Lake Buena Vista</p>
-                </div>
-                <a href="https://world.hyatt.com/content/gp/en/offers/new-hotels.html?icamp=hy_newhotelsbonuspoints_october2023_hppromo_A_en" style="text-align: center;">
-                    View Hotel
-                </a>
-              </div>
-            
+    </p>
+    <div style="display: flex; gap: 10px; justify-content: space-evenly;">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="images/Lobby.jpg" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">Hyatt Place Orlando Airport</p>
         </div>
+        <a href="https://www.hyatt.com/en-US/hotel/iowa/hyatt-place-des-moines-downtown/dsmzd?icamp=hpe_hy_com"
+          style="text-align: center;">
+          View Hotel
+        </a>
+      </div>
 
-        <h2 class="h2-title">Stay your way at Hyatt</h2>
-        <section id="third-row">
-            
-            <div class="card">
-                <div class="card-body">
-
-                    <img class="card-img-top" src="./images/1.jpg" />
-                    <h4 class="card-title medium-header">500 reasons to stay</h4>
-                    <p class="card-text">Explore new places and reward your spirit of adventure. Now you can earn 500 Bonus Points for qualifying nights at new Hyatt hotels around the world.</p>
-                    <a href="https://world.hyatt.com/content/gp/en/stories/masterpieces.html?icamp=hy_wohstories_masterpieces_october2023_hppromo_C_en">See Details ></a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-
-                    <img class="card-img-top" src="./images/QueenBed.jpg" />
-                    <h4 class="card-title medium-header">500 reasons to stay</h4>
-                    <p class="card-text">Learn something new, do the unexpected, or just hit pause. More than 200 experiences await—all with your wellbeing in mind. Find what inspires you and earn 10 points per eligible $1 spent.  ​</p>
-                    <a href="https://world.hyatt.com/content/gp/en/offers/new-hotels.html?icamp=hy_newhotelsbonuspoints_october2023_hppromo_A_en">See Details ></a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-
-                    <img class="card-img-top" src="./images/3.jpg" />
-                    <h4 class="card-title medium-header">500 reasons to stay</h4>
-                    <p class="card-text">Masterpieces Stories are a curated collection of 30+ hotels that let you take your rightful place in history.</p>
-                    <a href="https://experiences.hyatt.com/?icamp=hy_find_experiences_october2023_hppromo_B_en">See Details ></a>
-                </div>
-            </div>
-        </section>
-        <section id="bottom-container">
-            <img src="./images/4.jpg" />
-            <div class="right-info">
-                <h3 class="medium-header">Homes & hideaways</h3>
-            <p>Members can now earn and redeem points on a collection of private homes, villas, condos and more. Waterfront views? Mountainside escapes? Cozy hideaways? The choice is yours.</p>
-            <a href="https://www.hyatt.com/promo/hyatt-resorts?icamp=hy_hyattresorts_october2023_hppromo_D_en">Learn More ></a>
+      <div class="card" style="width: 18rem;" style="text-align: center;">
+        <img class="card-img-top" src="images/DESMoine.jpg" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">Hyatt Place Des Moines Downtown</p>
         </div>
-        </section>
+        <a href="https://world.hyatt.com/content/gp/en/offers/new-hotels.html?icamp=hy_newhotelsbonuspoints_october2023_hppromo_A_en"
+          style="text-align: center;">
+          View Hotel
+        </a>
+      </div>
 
-      
-    
-        <!-- ****** -->
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="images/Omha.jpg" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">Hyatt Place Omha</p>
+        </div>
+        <a href="https://world.hyatt.com/content/gp/en/offers/new-hotels.html?icamp=hy_newhotelsbonuspoints_october2023_hppromo_A_en"
+          style="text-align: center;">
+          View Hotel
+        </a>
+      </div>
 
-        <div style="background-color: #384d63;height: 470px;width: 100%;margin: 10px;
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="images/QueenBed.jpg" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">Hyatt Place Orlando/Lake Buena Vista</p>
+        </div>
+        <a href="https://world.hyatt.com/content/gp/en/offers/new-hotels.html?icamp=hy_newhotelsbonuspoints_october2023_hppromo_A_en"
+          style="text-align: center;">
+          View Hotel
+        </a>
+      </div>
+
+    </div>
+
+    <h2 class="h2-title">Stay your way at Hyatt</h2>
+    <section id="third-row">
+
+      <div class="card">
+        <div class="card-body">
+
+          <img class="card-img-top" src="./images/1.jpg" />
+          <h4 class="card-title medium-header">500 reasons to stay</h4>
+          <p class="card-text">Explore new places and reward your spirit of adventure. Now you can earn 500 Bonus Points
+            for qualifying nights at new Hyatt hotels around the world.</p>
+          <a
+            href="https://world.hyatt.com/content/gp/en/stories/masterpieces.html?icamp=hy_wohstories_masterpieces_october2023_hppromo_C_en">See
+            Details ></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+
+          <img class="card-img-top" src="./images/QueenBed.jpg" />
+          <h4 class="card-title medium-header">500 reasons to stay</h4>
+          <p class="card-text">Learn something new, do the unexpected, or just hit pause. More than 200
+            experiences await—all with your wellbeing in mind. Find what inspires you and earn 10 points per eligible $1
+            spent.  ​</p>
+          <a
+            href="https://world.hyatt.com/content/gp/en/offers/new-hotels.html?icamp=hy_newhotelsbonuspoints_october2023_hppromo_A_en">See
+            Details ></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+
+          <img class="card-img-top" src="./images/3.jpg" />
+          <h4 class="card-title medium-header">500 reasons to stay</h4>
+          <p class="card-text">Masterpieces Stories are a curated collection of 30+ hotels that let you take your
+            rightful place in history.</p>
+          <a href="https://experiences.hyatt.com/?icamp=hy_find_experiences_october2023_hppromo_B_en">See Details ></a>
+        </div>
+      </div>
+    </section>
+    <section id="bottom-container">
+      <img src="./images/4.jpg" />
+      <div class="right-info">
+        <h3 class="medium-header">Homes & hideaways</h3>
+        <p>Members can now earn and redeem points on a collection of private homes, villas, condos and more. Waterfront
+          views? Mountainside escapes? Cozy hideaways? The choice is yours.</p>
+        <a href="https://www.hyatt.com/promo/hyatt-resorts?icamp=hy_hyattresorts_october2023_hppromo_D_en">Learn More
+          ></a>
+      </div>
+    </section>
+
+
+
+    <!-- ****** -->
+
+    <div style="background-color: #384d63;height: 470px;width: 100%;margin: 10px;
  
         ">
-    
-        <div
-    
-          style="
+
+      <div style="
     
             display: flex;
     
@@ -221,59 +250,112 @@
             padding: 10px;
             margin: 10px;
     
-          "
-        >
-    
-          <span>Join</span>
-    
-          <span>World of Hyatt</span>
-    
-        </div>
-    
-        <!-- ****** -->
-    
-         <div style="display:flex;gap:270px;margin: 15px;height: 8%;margin-left: 40px;">
-    
-          <!-- <img src="images/Hyatt.png" style="width: 40px; border-radius: 50%;height: 30px;">
+          ">
+
+        <span>Join</span>
+
+        <span>World of Hyatt</span>
+
+      </div>
+
+      <!-- ****** -->
+
+      <div style="display:flex;gap:270px;margin: 15px;height: 8%;margin-left: 40px;">
+
+        <!-- <img src="images/Hyatt.png" style="width: 40px; border-radius: 50%;height: 30px;">
     
           <img src="images/HyatLogo.png" style="width: 40px; border-radius: 50%;height: 30px;">
     
           <img src="images/moon.png" style="width: 40px; border-radius: 50%;height: 30px;">
     
           <img src="images/star.png" style="width: 40px; border-radius: 50%;height: 30px;"> -->
-    
-        </div>
-    
-    <div style="display: flex;justify-content: space-evenly;margin: 10px;">
-        <div style="display:flex; flex-direction: column; color: #FFFFFF;padding: 5px;">
-            <div style="font-size: 22px;">Membership Is Free</div>
-            <p>Access exclusive offers and meaningful benefits.</p>
-       </div>
-          <div style="border-left: 1px solid white;padding: 5px;"></div>
-          <div style="display:flex; flex-direction: column; color: #FFFFFF;">
-            <div style="font-size: 22px;">Enjoy Member Rates</div>
-            <p>Save up to 10% with your Member Rate at participating Hyatt hotels.</p>
-          </div>
-          <div style="border-left: 1px solid white;padding: 5px;"></div>
-          <div style="display: flex; flex-direction: column; color: #FFFFFF;">
-            <div style="font-size: 22px;">Enjoy Member Rates</div>
-            <p>Enjoy a Brand Explorer Award after you stay at five unique brands.</p>
-          </div>
-          <div style="border-left: 1px solid white;padding: 5px;"></div>
-          <div style="display: flex; flex-direction: column; color: #FFFFFF;">
-            <div style="font-size: 22px;">Feel Rewarded</div>
-            <p>Earn points to use toward free nights, dining, spa experiences, and more.</p>
-          </div>
-    </div>
-        <div style="text-align: center;color: white;padding: 10px;margin: 10px;">
-          <button>JOIN NOW</button>
-        </div>
-          <div style="text-align: center;">
-          <a href="https://help.hyatt.com/en/hyatt-terms/world-of-hyatt-terms.html" style="color: white;">Terms Apply</a>
-        </div>
- 
+
       </div>
 
-    </body>
+      <div style="display: flex;justify-content: space-evenly;margin: 10px;">
+        <div style="display:flex; flex-direction: column; color: #FFFFFF;padding: 5px;">
+          <div style="font-size: 22px;">Membership Is Free</div>
+          <p>Access exclusive offers and meaningful benefits.</p>
+        </div>
+        <div style="border-left: 1px solid white;padding: 5px;"></div>
+        <div style="display:flex; flex-direction: column; color: #FFFFFF;">
+          <div style="font-size: 22px;">Enjoy Member Rates</div>
+          <p>Save up to 10% with your Member Rate at participating Hyatt hotels.</p>
+        </div>
+        <div style="border-left: 1px solid white;padding: 5px;"></div>
+        <div style="display: flex; flex-direction: column; color: #FFFFFF;">
+          <div style="font-size: 22px;">Enjoy Member Rates</div>
+          <p>Enjoy a Brand Explorer Award after you stay at five unique brands.</p>
+        </div>
+        <div style="border-left: 1px solid white;padding: 5px;"></div>
+        <div style="display: flex; flex-direction: column; color: #FFFFFF;">
+          <div style="font-size: 22px;">Feel Rewarded</div>
+          <p>Earn points to use toward free nights, dining, spa experiences, and more.</p>
+        </div>
+      </div>
+      <div style="text-align: center;color: white;padding: 10px;margin: 10px;">
+        <button>JOIN NOW</button>
+      </div>
+      <div style="text-align: center;">
+        <a href="https://help.hyatt.com/en/hyatt-terms/world-of-hyatt-terms.html" style="color: white;">Terms Apply</a>
+      </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
+    <script>
+      window.addEventListener('load', () => {
+        let checkInDate = document.getElementById('checkInDate'); // 2023-10-19 => [2023,10,19] => 20231019
+        let checkOutDate = document.getElementById("checkOutDate");
+
+        let find_hotels_btn = document.getElementById("find-hotels-button");
+
+        find_hotels_btn.addEventListener('click', (event) => {
+            event.preventDefault();
+            const date = new Date();
+
+            // Get the year, month, and day components
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, '0'); // Adding 1 to month since it's zero-based
+            const day = String(date.getDate()).padStart(2, '0');
+
+            // Create the formatted date string
+            const currentDate = parseInt(`${year}${month}${day}`);
+            const checkIn = parseInt(checkInDate.value.split('-').join(""));
+            const checkOut = parseInt(checkOutDate.value.split('-').join(""));
+
+            if(!checkInDate.value || !checkOutDate.value){ alert("Please select check in and checkout dates"); return}
+
+            if(checkIn > checkOut) {alert("Checkin date must be before checkout date"); return}
+            if(checkOut < currentDate) {alert("Checkout date must be in the future"); return}
+            if(checkIn < currentDate) {alert("Checkin date must be in the future"); return}
+
+            window.location.href = "rooms.html"
+        });
+
+        const autoCompleteJS = new autoComplete({
+            placeHolder: "Search cities...",
+            data: {
+                src: ["Des Moines", "Chicago", "Denver", "New York", "Los Angels", "San Fransico", "Dallas", "Alexandria", "Wahsingto D.C"],
+                cache: true,
+            },
+            resultItem: {
+                highlight: true
+            },
+            events: {
+                input: {
+                    selection: (event) => {
+                        const selection = event.detail.selection.value;
+                        autoCompleteJS.input.value = selection;
+                    }
+                }
+            }
+        });
+      })
+        
+    </script>
+
+</body>
 
 </html>
