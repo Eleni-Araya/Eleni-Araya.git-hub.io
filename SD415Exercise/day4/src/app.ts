@@ -1,6 +1,6 @@
 
 
-console.log("in app.ts", "sum of [1,2,3] is: ", sum([1,2,3]));
+console.log("in app.ts", "sum of [1,2,3] is: ", sum([1, 2, 3]));
 /**
  * 
  * @param {number} aa is a number
@@ -8,8 +8,13 @@ console.log("in app.ts", "sum of [1,2,3] is: ", sum([1,2,3]));
  * @param {number} c is a number
  * @returns {number} largest of a, b, c
  */
-export function maxOfThree(aa: number, b: number, c: number): number{ 
-    return 0;  //IMPLEMENT THIS -- DO NOT USE MATH.MAX
+export function maxOfThree(a: number, b: number, c: number): number {
+    if (a > b && a > c) {
+        return a;
+    } if (b > c) {
+        return b;
+    }
+    else return c;
 }
 
 /**
@@ -17,9 +22,14 @@ export function maxOfThree(aa: number, b: number, c: number): number{
  * @param {Array} arr of numbers
  * @returns {number} sum of arr numbers
  */
-export function sum(arr: number[]): number{
-//IMPLEMENT THIS 
-    return 0;
+// let number:number[];
+export function sum(arr: number[]): number {
+
+    let sumof: number = 0;
+    for (let numSum of arr) {
+        sumof = sumof + numSum;
+    }
+    return sumof;
 }
 
 
@@ -28,10 +38,15 @@ export function sum(arr: number[]): number{
  * @param {Array} arr of numbers
  * @returns {number} sum of arr numbers
  */
-export function multiply(arr: number[]): number{
-//IMPLEMENT THIS 
 
-    return 0;
+
+
+export function multiply(arr: number[]): number {
+    let multipleof: number = 1;
+    for (let multi of arr) {
+        multipleof = multipleof * multi;
+    }
+    return multipleof;
 
 }
 /* findLongestWord */
@@ -40,10 +55,35 @@ export function multiply(arr: number[]): number{
  * @param {*} arr of words 
  * @returns {number} length of longest word
  */
-export function findLongestWord(arr: string[]): number{
-//IMPLEMENT THIS 
+export function findLongestWord(arr: string[]): number {
+    if (arr.length === 0) {
+        // Return 0 for an empty array
+        return 0;
+      }
+    let maxWord: number = 0;
+    let wordLength: number;
+    
+    for (let word of arr) {
+        wordLength = word.length;
+        if (wordLength > maxWord) {
+            maxWord = wordLength
+        }
+    }
+    return maxWord;
+}
 
-    return 0;
+export function reverseArray(arr: any[]): any[]{
+    let newArr:any[] = []
+    for(let i=0;i<arr.length;i++){
+        newArr.push(arr.pop());
+    }
+    return newArr;
+
+}
+export function reverseArrayInPlace(arr:any[]): any[]{
+    const reversedArr=arr.reverse();
+    return reversedArr;
+
 }
 
 /* 6. Write a function that takes two integers as inputs and returns a 2-dimensional array containing sequential numbers across each row as follows:
@@ -59,8 +99,16 @@ describe("generate array", function () {
  * @param {*} cols num cols
  * @returns {Array} 2d array with entries i + j
  */
-export function generateArray(rows: number, cols: number): number[][]{
-//IMPLEMENT THIS 
+export function generateArray(rows: number, cols: number): number[][] {
+    let newArr:number[][]=[];
+    let arrItems:number=0;
+    let colValue:number=0;
+    for(let i=0;i<rows;i++){
+        for(let j=0;j<cols;j++){
+            newArr.push();
+            newArr
+        }
+    }
 
-return [[0]];
+    return [[0]];
 }
